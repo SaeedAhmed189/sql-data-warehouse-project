@@ -4,8 +4,8 @@ DDL Script: Create Bronze Tables
 ===============================================================================
 Script Purpose:
     This script creates tables in the 'bronze' schema, dropping existing tables 
-    if they already exist.
-	  Run this script to re-define the DDL structure of 'bronze' Tables
+    If they already exist.
+	  Run this script to redefine the DDL structure of 'bronze' Tables
 ===============================================================================
 */
 
@@ -34,8 +34,8 @@ CREATE TABLE bronze.crm_prd_info (
     prd_nm       NVARCHAR(50),
     prd_cost     INT,
     prd_line     NVARCHAR(50),
-    prd_start_dt DATETIME,
-    prd_end_dt   DATETIME
+    prd_start_dt DATE,
+    prd_end_dt   DATE
 );
 GO
 
